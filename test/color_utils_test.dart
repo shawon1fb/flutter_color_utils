@@ -12,7 +12,7 @@ void main() {
   Color white = const Color(0xffFFFFFF);
   Color black = const Color(0xff21211A);
 
-  test('color mixer test', () async {
+  test('colors mixer test', () async {
     /// ----- spicy Mix Color -----
     Color spicyMixColor = const Color(0xff83504A);
     List<Color> spicyMixerList = [yellow, red, blue];
@@ -64,4 +64,13 @@ void main() {
       expect(((match - expected) < 0.02), true);
     },
   );
+
+  test('mix two color', () {
+    const Color valentinoColor = Color(0xff451147);
+    Color mixColor = red + blue;
+    expect(valentinoColor == mixColor, true);
+    expect(valentinoColor != mixColor, false);
+  });
+
+
 }
