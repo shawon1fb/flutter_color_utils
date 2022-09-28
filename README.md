@@ -23,6 +23,11 @@ know whether this package might be useful for them.
 ## Getting started
 
 1. install dependencies
+```dart
+  color_utils:
+    git:
+      url: https://github.com/shawon1fb/color_utils.git
+```
 2. import dependencies
 
    ```dart
