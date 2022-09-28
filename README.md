@@ -49,6 +49,13 @@ Color spicyMixColor = const Color(0xff83504A);
 print( spicyMixColor == mix ); /// true
 
 ```
+### 2. HexColor String to Color
+```dart
+Color red     =  const Color(0xFF890041);
+Color redHexColor = HexColor('#890041');
+print(red == redHexColor); ///true
+print(redHexColor == red); ///true
+```
 
 ## Additional information
 
