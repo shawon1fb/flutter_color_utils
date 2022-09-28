@@ -15,13 +15,17 @@ TODO: Put a short description of the package here that helps potential users
 know whether this package might be useful for them.
 
 ## Features
+1. mix multiple colors
+2. match percentage of two colors
+3. generate color from hex string
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+1. install dependencies
+2. import dependencies
+   import 'package:color_utils/color_utils.dart';
+    
 
 ## Usage
 
@@ -34,6 +38,4 @@ const like = 'sample';
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+
