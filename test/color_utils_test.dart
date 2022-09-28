@@ -47,4 +47,21 @@ void main() {
       expect(redCool != redHexColor, false);
     },
   );
+
+  test(
+    'check match between two colors test',
+    () async {
+      Color spicyMixColor = const Color(0xff83504A);
+      Color pelorousColor = const Color(0xff44AABB);
+
+      double match = spicyMixColor.match(pelorousColor);
+      double expected = 64.31;
+      expect(((match - expected) < 0.02), true);
+
+      Color lunchColor = const Color(0xff74879E);
+      match = pelorousColor.match(lunchColor);
+      expected = 85.03;
+      expect(((match - expected) < 0.02), true);
+    },
+  );
 }
