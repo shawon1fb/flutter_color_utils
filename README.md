@@ -26,7 +26,9 @@ Color Utils is an useful package for play with colors.
 1. Install dependencies
 
 ```dart
-  color_utils:git:url: https: //github.com/shawon1fb/color_utils.git
+color_utils:
+    git:
+      url: https://github.com/shawon1fb/color_utils.git
 ```
 
 2. Import dependencies
