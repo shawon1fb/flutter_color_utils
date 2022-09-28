@@ -10,4 +10,23 @@ class HexColor extends Color {
   }
 
   HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
+
+  Color get toColor => this;
+
+  @override
+  Type get runtimeType => Color;
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) {
+      return true;
+    }
+    if (other.runtimeType != runtimeType) {
+      return false;
+    }
+    return other is Color && other.value == value;
+  }
+
+  @override
+  int get hashCode => value.hashCode;
 }
