@@ -57,6 +57,16 @@ print(red == redHexColor); ///true
 print(redHexColor == red); ///true
 ```
 
+### 3. match percentage of two colors
+```dart
+Color spicyMixColor = const Color(0xff83504A);
+Color pelorousColor = const Color(0xff44AABB);
+
+double match = spicyMixColor.match(pelorousColor);
+double expected = 64.31;
+print(((match - expected) < 0.02)); ///true
+```
+
 ## Additional information
 
 
