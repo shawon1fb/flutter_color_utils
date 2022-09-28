@@ -53,9 +53,7 @@ Color mix = ColorUtils.mixColors(spicyMixerList);
 
 Color spicyMixColor = const Color(0xff83504A);
 
-print
-(
-spicyMixColor == mix );
+print(spicyMixColor == mix );
 
 /// true
 
@@ -67,14 +65,10 @@ spicyMixColor == mix );
 
 Color red = const Color(0xFF890041);
 Color redHexColor = HexColor('#890041');
-print
-(
-red == redHexColor);
+print(red == redHexColor);
 
 ///true
-print
-(
-redHexColor == red);
+print(redHexColor == red);
 
 ///true
 ```
@@ -88,12 +82,7 @@ Color pelorousColor = const Color(0xff44AABB);
 
 double match = spicyMixColor.match(pelorousColor);
 double expected = 64.31;
-print
-(((
-match - expected) <
-0.02
-)
-);
+print(((match - expected) <0.02));
 
 ///true
 ```
