@@ -1,4 +1,30 @@
 include: package:flutter_lints/flutter.yaml
 
-# Additional information about this file can be found at
-# https://dart.dev/guides/language/analysis-options
+linter:
+  # https://dart-lang.github.io/linter/lints/index.html.
+  #
+  rules:
+    avoid_print: false
+    prefer_single_quotes: true
+    cancel_subscriptions: true
+    await_only_futures: true
+    valid_regexps: true
+    constant_identifier_names: false
+    file_names: true
+
+    prefer_relative_imports: true
+    avoid_relative_lib_imports: true
+
+
+    avoid_web_libraries_in_flutter: true
+    hash_and_equals: true
+
+    unrelated_type_equality_checks: true
+
+    always_require_non_null_named_parameters: true
+
+    annotate_overrides: true
+
+    avoid_function_literals_in_foreach_calls: true
+    avoid_init_to_null: true
+
