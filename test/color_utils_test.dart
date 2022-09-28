@@ -6,8 +6,8 @@ import 'package:flutter_test/flutter_test.dart';
 /// reference website https://trycolors.com/
 
 void main() {
-  Color redCool = const Color(0xFF890041);
-  Color yellowCool = const Color(0xffFFCE51);
+  Color red = const Color(0xFF890041);
+  Color yellow = const Color(0xffFFCE51);
   Color blue = const Color(0xff00224C);
   Color white = const Color(0xffFFFFFF);
   Color black = const Color(0xff21211A);
@@ -15,7 +15,7 @@ void main() {
   test('color mixer test', () async {
     /// ----- spicy Mix Color -----
     Color spicyMixColor = const Color(0xff83504A);
-    List<Color> spicyMixerList = [yellowCool, redCool, blue];
+    List<Color> spicyMixerList = [yellow, red, blue];
     Color mix = ColorUtils.mixColors(spicyMixerList);
     expect(mix == spicyMixColor, true);
     expect(mix != spicyMixColor, false);
@@ -23,8 +23,8 @@ void main() {
     /// ----- fedora Color -----
     Color fedoraColor = const Color(0xff756A72);
     List<Color> fedoraColorMixerList = [
-      redCool,
-      yellowCool,
+      red,
+      yellow,
       blue,
       blue,
       blue,
@@ -42,9 +42,9 @@ void main() {
     'HexColor to Color test',
     () {
       Color redHexColor = HexColor('890041');
-      expect(redCool == redHexColor, true);
-      expect(redHexColor == redCool, true);
-      expect(redCool != redHexColor, false);
+      expect(red == redHexColor, true);
+      expect(redHexColor == red, true);
+      expect(red != redHexColor, false);
     },
   );
 
