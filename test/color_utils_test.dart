@@ -41,7 +41,7 @@ void main() {
   test(
     'HexColor to Color test',
     () {
-      Color redHexColor = HexColor('890041');
+      Color redHexColor = HexColor('#890041');
       expect(red == redHexColor, true);
       expect(redHexColor == red, true);
       expect(red != redHexColor, false);

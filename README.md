@@ -24,16 +24,30 @@ know whether this package might be useful for them.
 
 1. install dependencies
 2. import dependencies
-   import 'package:color_utils/color_utils.dart';
+
+   ```dart
+    import 'package:color_utils/color_utils.dart';
+   ```
     
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+ Useful examples for color_utils users. more examples
+to `/test` folder.
 
+### 1. Multi colors mixer
 ```dart
-const like = 'sample';
+Color red     =  const Color(0xFF890041);
+Color yellow  =  const Color(0xffFFCE51);
+Color blue    =  const Color(0xff00224C);
+
+List<Color> spicyMixerList = [yellow, red, blue];
+Color mix = ColorUtils.mixColors(spicyMixerList);
+
+Color spicyMixColor = const Color(0xff83504A);
+
+print( spicyMixColor == mix ); /// true
+
 ```
 
 ## Additional information
