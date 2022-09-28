@@ -6,11 +6,11 @@ import 'package:flutter_test/flutter_test.dart';
 /// reference website https://trycolors.com/
 
 void main() {
-  Color red = const Color(0xFF890041);
-  Color yellow = const Color(0xffFFCE51);
-  Color blue = const Color(0xff00224C);
-  Color white = const Color(0xffFFFFFF);
-  Color black = const Color(0xff21211A);
+  Color red     =  const Color(0xFF890041);
+  Color yellow  =  const Color(0xffFFCE51);
+  Color blue    =  const Color(0xff00224C);
+  Color white   =  const Color(0xffFFFFFF);
+  Color black   =  const Color(0xff21211A);
 
   test('colors mixer test', () async {
     /// ----- spicy Mix Color -----
