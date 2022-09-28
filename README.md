@@ -30,9 +30,9 @@ know whether this package might be useful for them.
 ```
 2. import dependencies
 
-   ```dart
+```dart
     import 'package:color_utils/color_utils.dart';
-   ```
+```
     
 
 ## Usage
