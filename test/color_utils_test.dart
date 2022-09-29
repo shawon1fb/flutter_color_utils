@@ -1,16 +1,17 @@
 import 'dart:ui';
 
 import 'package:color_utils/color_utils.dart';
+import 'package:color_utils/src/utils/reverse.color.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 /// reference website https://trycolors.com/
 
 void main() {
-  Color red     =  const Color(0xFF890041);
-  Color yellow  =  const Color(0xffFFCE51);
-  Color blue    =  const Color(0xff00224C);
-  Color white   =  const Color(0xffFFFFFF);
-  Color black   =  const Color(0xff21211A);
+  Color red = const Color(0xFF890041);
+  Color yellow = const Color(0xffFFCE51);
+  Color blue = const Color(0xff00224C);
+  Color white = const Color(0xffFFFFFF);
+  Color black = const Color(0xff21211A);
 
   test('colors mixer test', () async {
     /// ----- spicy Mix Color -----
@@ -72,5 +73,18 @@ void main() {
     expect(valentinoColor != mixColor, false);
   });
 
-
+  test('reverse color', () {
+    Color spicyMixColor = const Color(0xff83504A);
+    List<Color> baseColorList = [
+      red,
+      yellow,
+      blue,
+      white,
+      black,
+    ];
+    ColorReversed colorReversed =
+        ColorReversed(baseColors: baseColorList, targetColor: spicyMixColor);
+    colorReversed.reverse(<Color>[]);
+    print(colorReversed.bestList);
+  });
 }
