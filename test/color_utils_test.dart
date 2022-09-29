@@ -86,5 +86,6 @@ void main() {
         ColorReversed(baseColors: baseColorList, targetColor: spicyMixColor);
     colorReversed.reverse(<Color>[]);
     print(colorReversed.bestList);
+    expect(colorReversed.globalMaxMatch==100.0, true);
   });
 }
