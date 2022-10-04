@@ -95,6 +95,7 @@ class ColorReversed {
       BestMatch bestMatch = _bestMatchFromList(baseColors);
       colorsList = [bestMatch.color];
       _globalMaxMatch = bestMatch.match;
+      _setBestMatch([bestMatch.color]);
     } else {
       List<Color> tempBestMixerList = <Color>[];
       for (int i = 0; i < baseColors.length; i++) {
