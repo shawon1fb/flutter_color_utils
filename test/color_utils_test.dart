@@ -67,8 +67,21 @@ void main() {
 
   test('mix two color', () {
     const Color valentinoColor = Color(0xff451147);
+
+    ///NB: + operator only works with 2 colors [red + blue]
+    ///  more then 2 colors will not return valid mixed color. [red + blue+ green] != mixColor
+    ///  for more then 2 colors use [ColorUtils.mixColors([...colors])] or [anyColor.mixWith([..colors])]
     Color mixColor = red + blue;
+    Color mixColor2 = red.mixColor(blue);
+    Color mixColor3 = red.mixWith([blue]);
+
+    bool mixColorResult = (mixColor == mixColor2 &&
+        mixColor == mixColor3 &&
+        valentinoColor == mixColor);
+    print(mixColorResult);
+
     expect(valentinoColor == mixColor, true);
+    expect(mixColorResult == true, true);
     expect(valentinoColor != mixColor, false);
   });
 
@@ -85,6 +98,6 @@ void main() {
         ColorRecipe(baseColorsList: baseColorList, targetColor: spicyMixColor);
     colorReversed.getColorRecipe(<Color>[]);
     print(colorReversed.bestList);
-    expect(colorReversed.globalMaxMatch==100.0, true);
+    expect(colorReversed.globalMaxMatch == 100.0, true);
   });
 }
