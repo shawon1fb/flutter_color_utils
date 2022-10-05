@@ -73,7 +73,7 @@ void main() {
     expect(valentinoColor != mixColor, false);
   });
 
-  test('reverse color', () {
+  test('cook color', () {
     Color spicyMixColor = const Color(0xff83504A);
     List<Color> baseColorList = [
       red,
@@ -82,9 +82,9 @@ void main() {
       white,
       black,
     ];
-    ColorReversed colorReversed =
-        ColorReversed(baseColors: baseColorList, targetColor: spicyMixColor);
-    colorReversed.reverse(<Color>[]);
+    ColorRecipe colorReversed =
+        ColorRecipe(baseColorsList: baseColorList, targetColor: spicyMixColor);
+    colorReversed.getColorRecipe(<Color>[]);
     print(colorReversed.bestList);
     expect(colorReversed.globalMaxMatch==100.0, true);
   });

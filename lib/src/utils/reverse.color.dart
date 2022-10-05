@@ -5,13 +5,13 @@ import 'package:flutter/material.dart';
 
 import '../../color_utils.dart';
 
-class ColorReversed {
-  ColorReversed({
-    required this.baseColors,
+class ColorRecipe {
+  ColorRecipe({
+    required this.baseColorsList,
     required this.targetColor,
-  }) : assert(baseColors.isNotEmpty, 'baseColors must not be empty');
+  }) : assert(baseColorsList.isNotEmpty, 'baseColors must not be empty');
 
-  final List<Color> baseColors;
+  final List<Color> baseColorsList;
 
   final Color targetColor;
   double _globalMaxMatch = 0.0;
@@ -67,8 +67,8 @@ class ColorReversed {
     _bestList = colorList;
   }
 
-  List<Color> reverse(List<Color> colorsList) {
-    List<Color> rec = _reverse(colorsList);
+  List<Color> getColorRecipe(List<Color> colorsList) {
+    List<Color> rec = _recipe(colorsList);
     // _bestList = [
     //   ...compareAndReturnBestList([...bestList], rec)
     // ];
@@ -85,21 +85,21 @@ class ColorReversed {
     return l;
   }
 
-  List<Color> _reverse(List<Color> colorsList) {
+  List<Color> _recipe(List<Color> colorsList) {
     _totalStepTook++;
     // print(
     //     'totalStepTook: $totalStepTook  => bestMatchColor: $_globalMaxMatch colorsList=> ${colorsList.length}');
     double maxMatch = 0.0;
 
     if (colorsList.isEmpty) {
-      BestMatch bestMatch = _bestMatchFromList(baseColors);
+      BestMatch bestMatch = _bestMatchFromList(baseColorsList);
       colorsList = [bestMatch.color];
       _globalMaxMatch = bestMatch.match;
       _setBestMatch([bestMatch.color]);
     } else {
       List<Color> tempBestMixerList = <Color>[];
-      for (int i = 0; i < baseColors.length; i++) {
-        Color color = baseColors[i];
+      for (int i = 0; i < baseColorsList.length; i++) {
+        Color color = baseColorsList[i];
 
         /// mix and match
         Color mixer = ColorUtils.mixColors([...colorsList, color]);
@@ -117,8 +117,6 @@ class ColorReversed {
         }
       }
 
-      // print(
-      //     'maxMatch > globalMaxMatch = $maxMatch > $_globalMaxMatch => ${maxMatch > _globalMaxMatch} ');
       if (maxMatch > _globalMaxMatch) {
         _globalMaxMatch = maxMatch;
         colorsList = [
@@ -144,7 +142,7 @@ class ColorReversed {
       _setBestMatch(colorsList);
       return [...colorsList];
     } else {
-      return _reverse([...colorsList]);
+      return _recipe([...colorsList]);
     }
   }
 }
