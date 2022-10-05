@@ -89,6 +89,22 @@ print(((match - expected) <0.02));
 
 ///true
 ```
+### 4. Color cooker
+```dart
+ Color spicyMixColor = const Color(0xff83504A);
+ List<Color> baseColorList = [
+   const Color(0xFF890041),
+   const Color(0xffFFCE51),
+   const Color(0xff00224C),
+   const Color(0xffFFFFFF),
+   const Color(0xff21211A),
+    ];
+ ColorRecipe colorReversed =
+        ColorRecipe(baseColorsList: baseColorList, targetColor: spicyMixColor);
+ colorReversed.getColorRecipe(<Color>[]);
+ print(colorReversed.bestList);
+ print(colorReversed.globalMaxMatch==100.0); /// true
+```
 
 ## Additional information
 

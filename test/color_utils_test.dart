@@ -76,11 +76,11 @@ void main() {
   test('cook color', () {
     Color spicyMixColor = const Color(0xff83504A);
     List<Color> baseColorList = [
-      red,
-      yellow,
-      blue,
-      white,
-      black,
+      const Color(0xFF890041),
+      const Color(0xffFFCE51),
+      const Color(0xff00224C),
+      const Color(0xffFFFFFF),
+      const Color(0xff21211A),
     ];
     ColorRecipe colorReversed =
         ColorRecipe(baseColorsList: baseColorList, targetColor: spicyMixColor);
