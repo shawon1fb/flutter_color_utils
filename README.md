@@ -56,9 +56,7 @@ Color mix = ColorUtils.mixColors(spicyMixerList);
 
 Color spicyMixColor = const Color(0xff83504A);
 
-print(spicyMixColor == mix );
-
-/// true
+print(spicyMixColor == mix );/// true
 
 ```
 
@@ -68,12 +66,9 @@ print(spicyMixColor == mix );
 
 Color red = const Color(0xFF890041);
 Color redHexColor = HexColor('#890041');
-print(red == redHexColor);
+print(red == redHexColor);///true
 
-///true
-print(redHexColor == red);
-
-///true
+print(redHexColor == red);///true
 ```
 
 ### 3. Match percentage of two colors
@@ -85,9 +80,7 @@ Color pelorousColor = const Color(0xff44AABB);
 
 double match = spicyMixColor.match(pelorousColor);
 double expected = 64.31;
-print(((match - expected) <0.02));
-
-///true
+print(((match - expected) <0.02));///true
 ```
 ### 4. Color cooker
 ```dart
