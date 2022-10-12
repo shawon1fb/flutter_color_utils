@@ -14,8 +14,8 @@ extension ColorSum on Color {
 
   void printColor({String? tag}) => ColorUtils.colorPrint(this, name: tag);
 
-  String toHexString() {
-    return '#${red.toRadixString(16).padLeft(2, '0')}${green.toRadixString(16).padLeft(2, '0')}${blue.toRadixString(16).padLeft(2, '0')}';
+  String toHexString({bool hashSign = true}) {
+    return '${hashSign ? '#' : ''}${red.toRadixString(16).padLeft(2, '0')}${green.toRadixString(16).padLeft(2, '0')}${blue.toRadixString(16).padLeft(2, '0')}'.toUpperCase();
   }
 
   String toRgbString() {
