@@ -23,7 +23,3 @@ extension ColorSum on Color {
     return 'rgb($red,$green,$blue)';
   }
 }
-
-extension ColorGenerator on Colors {
-  Color get random => ColorUtils.generateRandomColor();
-}

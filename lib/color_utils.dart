@@ -3,3 +3,4 @@ export '/src/utils/hex.color.dart';
 export '/src/utils/color.utils.dart';
 export '/src/extensions/color.extension.dart';
 export '/src/utils/color.cooker.dart';
+export '/src/extensions/colors.extension.dart';

@@ -1,6 +1,5 @@
-import 'dart:ui';
-
 import 'package:color_utils/color_utils.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 /// reference website https://trycolors.com/
@@ -99,5 +98,13 @@ void main() {
     colorReversed.getColorRecipe(<Color>[]);
     print(colorReversed.bestList);
     expect(colorReversed.globalMaxMatch == 100.0, true);
+  });
+
+  test('random color', () {
+    Color random = ColorUtils.generateRandomColor();
+    print(random);
+    Color random1 = ColorUtils.generateRandomColor();
+    print(random1);
+    expect(random != random1, true);
   });
 }
