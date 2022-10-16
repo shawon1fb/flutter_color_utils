@@ -2,14 +2,13 @@ import 'dart:math';
 import 'dart:ui';
 
 class ColorUtils {
-
   static Color mixColors(List<Color> colors) {
     int sumAlpha = 0;
     int r = 0;
     int g = 0;
     int b = 0;
     double o = 0.0;
-    if(colors.isEmpty)return Color.fromRGBO(r, g, b, o);
+    if (colors.isEmpty) return Color.fromRGBO(r, g, b, o);
 
     for (int i = 0; i < colors.length; i++) {
       r += (colors[i].red * colors[i].alpha);
@@ -46,5 +45,9 @@ class ColorUtils {
     double p = d / sqrt(pow((255), 2) + pow((255), 2) + pow((255), 2));
     p = (1.0 - p);
     return p * 100;
+  }
+
+  static Color generateRandomColor() {
+    return Color((Random().nextDouble() * 0xFFFFFF).toInt());
   }
 }
