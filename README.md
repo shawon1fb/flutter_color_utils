@@ -29,7 +29,7 @@ Color Utils is an useful package for play with colors.
 ```dart
 color_utils:
     git:
-      url: https://github.com/shawon1fb/color_utils.git
+      url: https://github.com/shawon1fb/flutter_color_utils.git
 ```
 
 2. Import dependencies
