@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 //
-// import '../../color_utils.dart';
+// import '../../flutter_color_utils.dart';
 //
 // extension ColorGenerator on Colors {
 //   static Color random() => ColorUtils.generateRandomColor();

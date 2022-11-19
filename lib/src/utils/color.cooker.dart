@@ -3,7 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-import '../../color_utils.dart';
+import '../../flutter_color_utils.dart';
 
 class ColorRecipe {
   ColorRecipe({

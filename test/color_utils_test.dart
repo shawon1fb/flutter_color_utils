@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_color_utils/color_utils.dart';
+import 'package:flutter_color_utils/flutter_color_utils.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 /// reference website https://trycolors.com/

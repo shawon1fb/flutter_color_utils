@@ -35,7 +35,7 @@ color_utils:
 2. Import dependencies
 
 ```dart
-    import 'package:color_utils/color_utils.dart';
+    import 'package:color_utils/flutter_color_utils.dart';
 ```
 
 ## Usage
