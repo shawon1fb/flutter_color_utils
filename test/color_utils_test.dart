@@ -1,5 +1,6 @@
-import 'package:color_utils/color_utils.dart';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_color_utils/color_utils.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 /// reference website https://trycolors.com/
@@ -16,6 +17,7 @@ void main() {
     Color spicyMixColor = const Color(0xff83504A);
     List<Color> spicyMixerList = [yellow, red, blue];
     Color mix = ColorUtils.mixColors(spicyMixerList);
+
     expect(mix == spicyMixColor, true);
     expect(mix != spicyMixColor, false);
 
