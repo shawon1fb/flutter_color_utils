@@ -31,6 +31,11 @@ color_utils:
     git:
       url: https://github.com/shawon1fb/flutter_color_utils.git
 ```
+or
+```dart
+dependencies:
+  flutter_color_utils: ^0.0.1
+```
 
 2. Import dependencies
 
