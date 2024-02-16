@@ -15,39 +15,6 @@ and the Flutter guide for
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Color Utils: Play with Colors in Flutter!</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 2rem;
-    }
-
-    h1, h2 {
-      margin-bottom: 1rem;
-    }
-
-    pre {
-      background-color: ##2D333B;
-      padding: 1rem;
-      border-radius: 5px;
-    }
-
-    ul {
-      list-style: disc;
-      padding-left: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
 
