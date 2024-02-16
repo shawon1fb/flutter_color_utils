@@ -106,4 +106,6 @@ print(colorReversed.globalMaxMatch == 100.0); // Should be true!
 
 If you enjoy using Color Utils, consider buying me a coffee!
 
-[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-blue.png)](https://www.buymeacoffee.com/shawon1fb)
+<a href="https://www.buymeacoffee.com/shawon1fb" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" />
+</a>
