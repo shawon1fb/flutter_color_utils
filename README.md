@@ -13,6 +13,8 @@ usage, and provides helpful examples to get you started.
     vibrant colors.
 -   Color cooker: Discover color palettes that complement or contrast
     with a target color.
+## example website
+[https://trycolors.com](https://trycolors.com/)
 
 ## Getting Started
 
@@ -100,7 +102,6 @@ print(colorReversed.globalMaxMatch == 100.0); // Should be true!
 ## Additional Resources
 
 -   [Color Wheel Reference](https://color.adobe.com/create/color-wheel)
--   [Interactive Color Exploration](https://trycolors.com/)
 
 ## Support
 
