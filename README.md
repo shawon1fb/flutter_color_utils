@@ -1,62 +1,48 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Color Utils: Play with Colors in Flutter!
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+Color Utils is a powerful Flutter package that empowers you to explore
+and manipulate colors with ease. This readme describes the features,
+usage, and provides helpful examples to get you started.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+## Key Features
 
-<h1>Color Utils: Play with Colors in Flutter!</h1>
+-   Mix multiple colors: Create unique shades by combining colors.
+-   Match color percentages: Compare colors and quantify their
+    similarity.
+-   Generate colors from hex strings: Easily convert hex codes to
+    vibrant colors.
+-   Color cooker: Discover color palettes that complement or contrast
+    with a target color.
 
-<p>Color Utils is a powerful Flutter package that empowers you to explore and manipulate colors with ease. This readme describes the features, usage, and provides helpful examples to get you started.</p>
+## Getting Started
 
-<h2>Key Features</h2>
+1. Install dependencies
 
-<ul>
-  <li>Mix multiple colors: Create unique shades by combining colors.</li>
-  <li>Match color percentages: Compare colors and quantify their similarity.</li>
-  <li>Generate colors from hex strings: Easily convert hex codes to vibrant colors.</li>
-  <li>Color cooker: Discover color palettes that complement or contrast with a target color.</li>
-</ul>
+```dart
+color_utils:
+    git:
+      url: https://github.com/shawon1fb/flutter_color_utils.git
+```
+or
+```dart
+dependencies:
+  flutter_color_utils: ^0.0.1
+```
 
-<h2>Getting Started</h2>
+2.  **Import the library:**
+```dart
+    import 'package:color_utils/flutter_color_utils.dart';
+```
 
-<ol>
-  <li><strong>Install the package:</strong>
-    <pre>
-      dependencies:
-        flutter_color_utils: ^0.0.1
-    </pre>
-  </li>
-  <li><strong>Import the library:</strong>
-    <pre>
-      import 'package:color_utils/flutter_color_utils.dart';
-    </pre>
-  </li>
-</ol>
-
-<h2>Explore Color Mixing</h2>
-
-<pre>
+## Explore Color Mixing
+```dart
 //colors
 Color red = const Color(0xFF890041);
 Color yellow = const Color(0xffFFCE51);
 Color blue = const Color(0xff00224C);
 
 // Choose your spicy palette
-List<Color> spicyMixerList = [yellow, red, blue];
+List spicyMixerList = [yellow, red, blue];
 
 // Mix them up!
 Color mix = ColorUtils.mixColors(spicyMixerList);
@@ -66,23 +52,18 @@ Color spicyMixColor = const Color(0xff83504A);
 
 // Check if the mixing worked as expected
 print(spicyMixColor == mix ); // Should be true!
-</pre>
-
-<h2>Convert Hex Strings to Colors</h2>
-
-<pre>
+```
+## Convert Hex Strings to Colors
+```dart
 Color red = const Color(0xFF890041);
 Color redHexColor = HexColor('#890041');
 
 // They should be the same!
 print(red == redHexColor);//true
 print(redHexColor == red);//true
-
-</pre>
-
-<h2>Match Color Similarity</h2>
-
-<pre>
+```
+## Match Color Similarity
+```dart
 Color spicyMixColor = const Color(0xff83504A);
 Color pelorousColor = const Color(0xff44AABB);
 
@@ -91,11 +72,9 @@ double match = spicyMixColor.match(pelorousColor);
 
 double expected = 64.31;
 print(((match - expected) < 0.02));//true
-</pre>
-
-<h2>Discover Color Palettes</h2>
-
-<pre>
+```
+## Discover Color Palettes
+```dart
 Color spicyMixColor = const Color(0xff83504A);
 List<Color> baseColorList = [
    const Color(0xFF890041),
@@ -117,16 +96,15 @@ print(colorReversed.bestList);
 
 // Check if the global match is perfect
 print(colorReversed.globalMaxMatch == 100.0); // Should be true!
-</pre>
+```
+## Additional Resources
 
-<h2>Additional Resources</h2>
- <ul>
-    <li><a href="https://color.adobe.com/create/color-wheel">Color Wheel Reference</a></li>
-    <li><a href="https://trycolors.com/">Interactive Color Exploration</a></li>
-  </ul>
-<h2>Support</h2>
-  <p>If you enjoy using Color Utils, consider buying me a coffee!</p>
-<a href="https://www.buymeacoffee.com/shawon1fb" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+-   [Color Wheel Reference](https://color.adobe.com/create/color-wheel)
+-   [Interactive Color Exploration](https://trycolors.com/)
 
-</body>
-</html>
+## Support
+
+If you enjoy using Color Utils, consider buying me a coffee!
+
+[![Buy Me A
+Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-blue.png)](https://www.buymeacoffee.com/shawon1fb)
