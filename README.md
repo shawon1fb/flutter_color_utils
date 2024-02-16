@@ -110,3 +110,5 @@ print(((match - expected) <0.02));///true
 
 1. https://color.adobe.com/create/color-wheel
 2. https://trycolors.com/
+
+<a href="https://www.buymeacoffee.com/shawon1fb" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
